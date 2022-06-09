@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Document</title>
+	</head>
+	<body>
+		Keywords
+		<input type="" id="myInput" value="" name="">
+		<button onclick="alertNumb()">first button</button>
+		<button onclick="alertNumb()">second button</button>
+		<button onclick="alertNumb()">third button</button>
+		<div id="myDiv">Hello</div>
+		<div contenteditable="">Hello</div>
+
+		<input type="" onkeyup="console.log(2)" name=""> <br> <br> <br>
+		<!-- <button onclick="alert(80)">click me</button>
+		<button ondblclick="alert(80)">click me</button>	
+		<button onmouseenter="alert(80)">click me</button>
+		<button onmouseleave="alert(80)">click me</button> -->
+
+		<input type="" id="theInput" value="" name="">
+		<button onclick="alertTwice()">click</button>
+
+		<div id="theDiv"></div>
+
+		<script type="text/javascript">
+			function alertNumb(){
+				// console.log(myInput);
+				// myDiv.innerText = 'Good morning <br> Taiwo';
+				// myDiv.innerHTML = "Good Morning <br> Taiwo";
+				myInput.value = 'My name "is Kolade" from Oyo "to Ibadan"';
+
+			}
+
+			function alertTwice(){
+				// alert(theInput);
+				// alert(theInput.value);
+				theDiv.innerText = theInput.value * 2;
+				// alert(theDiv.innerText * 2);
+			}
+			// var numberOfStudentsToday = 5;
+			// alert(numberOfStudentsToday * 3);
+
+			// var number_of_students_today = 5; 
+			// called snake casing
+			// var NumberOfStudentsToday = 5;
+			// called pascal casing
+			// var	numberOfStudentsToday = 5;
+			// called carmel casing
+		</script>
+	</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<!-- Logical operators	 
+		not, or, and-->
+		<div id="result"></div>
+		<input type="" value="" id="score" name="">
+		<button onclick="myButton()">click me</button>
+		<br> <br>
+		<div id="resultMe"></div>
+		<input type="" id="scoreMe" name="">
+		<button onclick="gradeStudent()">Grade</button>
+		<script type="text/javascript">
+			// var a = 5;
+			// if (a != 5) {
+			// 	alert("good");
+			// } else{
+			// 	alert("bad")
+			// }
+
+			// var a = 3;
+			// var b = 5;
+			// var c = 9;
+			// if ((a == 3 || b == 5) && c==15) {
+			// 	alert("good");
+			// } else {
+			// 	alert("bad");
+			// }
+
+			// var name = "kolade";
+			// var dept = "software";
+			// if (name != "kolade" || dept == "sofware") {
+			// 	alert("good");
+			// } else{
+			// 	alert("bad");
+			// }
+
+			// var name = "kolade";
+			// var dept = "software";
+			// if (name == "kolade" && dept == "hardware") {
+			// 	alert("good");
+			// } else{
+			// 	alert("bad");
+			// }
+
+			// var a = 40;
+			function gradeStudent() {
+				var stdScore =  scoreMe.value;
+				var myScore = Number(stdScore);
+
+				if (myScore > 100 || myScore < 0) {
+					alert('öut of range');
+				}
+				else if (myScore>=70) {
+					alert("excellent");
+				} 
+				else if (myScore>=60) {
+					alert("good");
+				} 
+				else if (myScore>=50) {
+					alert("average");
+				} 
+				else if (myScore>=45) {
+					alert("Pass");
+				} 
+				else if (myScore>=40) {
+					alert("Poor");
+				} 
+				else if (myScore>=0) {
+					alert("fail");
+				} 
+				else if (isNaN(myScore)) {
+					alert("Not a Number");
+				}
+			}
+
+			function myButton() {
+				if (score.value >= 70 && score.value <= 100) {
+					result.innerText = "Excellent";
+					result.style.backgroundColor = "green";
+					result.style.color = "white";
+				} else if (score.value <= 69 && score.value >= 60) {
+					result.innerText = "Good";
+					result.style.backgroundColor = "blue";
+					result.style.color = "white";
+				} else if (score.value <= 59 && score.value >= 50) {
+					result.innerText = "Average";
+					result.style.backgroundColor = "orange";
+					result.style.color = "white";
+				} else if (score.value <= 49 && score.value >= 45) {
+					result.innerText = "Pass";
+					result.style.backgroundColor = "yellow";
+					result.style.color = "black";
+				} else if (score.value <= 44 && score.value >= 40) {
+					result.innerText = "Poor";
+					result.style.backgroundColor = "purple";
+					result.style.color = "white";
+				} else if (score.value <= 39 && score.value >= 0) {
+					result.innerText = "Fail";
+					result.style.backgroundColor = "red";
+					result.style.color = "white";
+				} else if (isNaN(score)) {
+					result.innerText = "Not A Number";
+				} else {
+					result.innerText = "Out Of Range";
+					result.style.backgroundColor = "black";
+					result.style.color = "white";
+				}
+			}
+
+			// Parameterized function
+		</script>
+	</body>
+</html>

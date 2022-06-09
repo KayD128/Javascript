@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Work</title>
+	</head>
+	<body>
+		<!-- <label>1st Number:</label>
+		<input type="" id="inputOne" name="" value="">
+		<br> <br>
+		<label>2nd Number:</label>
+		<input type="" name="" id="inputTwo" value="">
+		<br> <br>
+		<button onclick="onMultiply()" >Multiply</button>
+		<button onclick="onDivide()" >Divide</button>
+		<br> <br>
+		<div>
+			<div>The result is:</div>
+			<div id="theDiv"></div>
+		</div> -->
+
+		<div id="deMo"></div>
+		<input type="" value="" id="inputOne" name=""> + <input type="" value="" id="inputTwo" name="">
+
+		<button onclick="onAdd()">Click me</button>
+
+		<!-- <button onclick="myFunc()">button</button>
+		<button onclick="secondFunc()">second</button>-->
+
+
+		<script type="text/javascript">
+
+			var remainder = 11 % 4; 
+			console.log(remainder);	
+
+			function onAdd() {
+				var myScore = Number(inputOne.value);
+				var yourScore = Number(inputTwo.value);
+
+				if (myScore == 50 || yourScore == 50 || myScore + yourScore == 50) {
+					deMo.innerHTML = "True";
+				} else {
+					deMo.innerText = myScore + yourScore;
+				}
+
+			}
+			// function onMultiply() {
+			// 	// inputOne.value *= inputTwo.value;
+			// 	theDiv.innerHTML = inputOne.value * inputTwo.value;
+			// }
+
+			// function onDivide() {
+			// 	// inputTwo.value /= inputOne.value;
+			// 	theDiv.innerHTML = inputOne.value / inputTwo.value;  
+			// }
+			// var b = 500;
+			// function myFunc() {
+			// 	var b = 100;
+			// 	b -= 200;
+			// 	alert(b);
+			// }
+
+			// function secondFunc() {
+			// 	alert(b);
+			// }
+
+		</script>
+	</body>
+</html>

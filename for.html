@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Work</title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+			// This is a for loop for adding an array altogether to the end
+
+			var ourArr = [9, 10, 11, 12];
+			var ourTotal = 0;
+
+			for (var i = 0; i < ourArr.length; i++) {
+				ourTotal += ourArr[i];
+			}
+
+			console.log(ourTotal);
+
+			// Nested For loops
+			function multiplyAll(arr) {
+				var product = 1;
+
+				for (var i=0; i < arr.length; i++) {
+					for (var j=0; j < arr[i].length; j++) {
+						product *= arr[i][j];
+					}
+				}
+			}
+
+		</script>
+	</body>
+</html>

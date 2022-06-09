@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<!-- undefined and null -->
+	</head>
+	<body>
+		<button onclick="myFunc('Taiwo', 2, 'Software')">First</button>
+		<button onclick="myFunc('kenny', 3, 'hardware')">Second</button>
+		<button onclick="myFunc('idowu', 4, 'multimedia')">Third</button>
+		<button onclick="myFunc('James', 10,)">fourth</button>
+		<button onclick="myFunc('Tunde', 15, 'CSE', 'Lautech')">fifth</button>
+		<br> <br>
+		<button onclick="theFunc('Taiwo')">First</button>
+		<button onclick="theFunc()">second</button>
+
+		<script type="text/javascript">
+			function myFunc(name, age, dept, school='SQI') {
+				alert("My name is " + name + ", I am from "+ dept + " department, " +age+" years old, student of " +school);
+				// alert("My name is Taiwo, I am from Software Department");
+			}
+
+			function theFunc(name='Kolade') {
+				alert("My name is " +name);
+			}
+			// function secondFunc() {
+			// 	alert("My name is Kenny, I am from Software Department");
+			// }
+			// function thirdFunc() {
+			// 	alert("My name is Idowu, I am from Software Department");
+			// }
+
+		</script>
+	</body>
+</html>

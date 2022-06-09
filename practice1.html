@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Document</title>
+	</head>
+	<body>
+		<button onclick="dateTime()">Click me to display time</button>
+		<div id="me"></div>
+
+		<button onclick="bulbOn()" id="myBtn">ON</button>
+
+		<img src="images/pic_bulboff.gif" id="myImg">
+
+		<!-- <button onclick="bulbOff()">Off</button> -->
+		<script type="text/javascript">
+			function dateTime(){
+				me.innerHTML = Date();
+			}
+
+			function bulbOn(){
+				if (myBtn.innerText == "ON") {
+					myImg.src = 'images/pic_bulbon.gif';
+					myBtn.innerText = "OFF";
+				} else if (myBtn.innerText == "OFF") {
+				// myImg.src = 'images/pic_bulbon.gif';	
+					myImg.src = 'images/pic_bulboff.gif';
+					myBtn.innerText = "ON";
+				}
+				// myBtn.innerText = "OFF";
+			}
+
+			// function bulbOff(){
+			// 	myImg.src = 'images/pic_bulboff.gif';
+			// }
+		</script>
+	</body>
+</html>

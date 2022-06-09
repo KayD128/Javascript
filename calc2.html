@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Scientific</title>
+		<link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+		<style type="text/css">
+			/* div {
+			} */
+
+			button {
+				/*border: none;*/
+				padding: 20px;
+				margin-top: 5px;
+			}
+			input {
+					padding: 20px;
+				/*border: none;*/
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <button>3</button>
+		<button>0</button>
+		<button>=</button> -->
+		<div align="center" style="margin-top: 20px;">
+			<input type="" name="" id="theForm" value=""> <br>
+
+			<button onclick="myCalc(1)">1</button>
+			<button onclick="myCalc(2)">2</button>
+			<button onclick="myCalc(3)">3</button>
+			<button onclick="onClear()">C</button>
+			<button><i class="fas fa-backspace" onclick="onDelete()"></i></button>
+
+			<br>
+
+			<button onclick="myCalc(4)" style="margin-right: 4px;">4</button>
+			<button onclick="myCalc(5)" style="margin-right: 4px;">5</button>
+			<button onclick="myCalc(6)" style="margin-right: 4px;">6</button>
+			<button onclick="myCalc('-')" style="margin-right: 4px;">-</button>
+			<button onclick="myCalc('*')" style="margin-right: 4px;">*</button>
+
+			<br>
+
+			<button onclick="myCalc(7)" style="margin-right: 4px;">7</button>
+			<button onclick="myCalc(8)" style="margin-right: 4px;">8</button>
+			<button onclick="myCalc(9)" style="margin-right: 4px;">9</button>
+			<button onclick="myCalc('+')" style="margin-right: 4px;">+</button>
+			<button onclick="myCalc('/')" style="margin-right: 4px;">/</button>
+
+			<br>
+
+			<button onclick="myCalc(0)" style="margin-right: 4px;">0</button>
+			<button onclick="myCalc('.')" style="margin-right: 4px;">.</button>
+			<button onclick="myCalc('(')" style="margin-right: 4px;">(</button>
+			<button onclick="myCalc(')')" style="margin-right: 4px;">)</button>
+			<button onclick="myResult('=')" style="margin-right: 4px;">=</button>
+
+			<br>
+
+			<button onclick="mySin('Sin')">sin</button>
+			<button onclick="myCos('Cos')">cos</button>
+			<button onclick="myTan('Tan')">tan</button>
+			<button onclick="mySqr()">x<sup>2</sup></button>
+			<button onclick="mySqrt()"><span>&#8730;</span></button>
+		</div>
+
+		<script type="text/javascript">
+			// How to create a variable in object 
+
+			// var person = 
+			// {	name: "Taiwo", 
+			// 	complexion: "black",
+			// 	displayNumber() {
+			// 		alert(10);
+			// 	}
+			// };
+			// 	console.log(person.complexion);
+			// 	person.displayNumber();
+
+			// alert(Math.sin(30 * Math.PI/180));
+
+			// alert(Math.cos(60 * Math.PI/180));
+			// var rand = Math.random() * 10;
+
+			// alert(Math.round(rand));
+			// var num = 4.6;
+			// alert(Math.floor(num));
+			// alert(Math.ceil(num));
+			// return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+			var myForm = Number(theForm.value);
+
+			function myCalc(numb) {
+				theForm.value += numb;
+			}
+
+			function myResult() {
+				theForm.value = eval(theForm.value);
+				
+			}
+
+			function onDelete() {
+				theForm.value = theForm.value.slice(0, theForm.value.length - 1);
+			}
+
+			function onClear() {
+				theForm.value = theForm.value.slice(0, 0);
+			}
+
+			function mySin() {
+			// return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+			theForm.value = (Math.sin(theForm.value * Math.PI/180));
+			// alert(Math.sin(60 * Math.PI/180));
+
+			}
+
+			function myCos() {
+				theForm.value = (Math.cos(theForm.value * Math.PI/180));
+			}
+
+			function myTan() {
+				theForm.value = (Math.sin(theForm.value * Math.PI/180)/Math.cos(theForm.value * Math.PI/180));
+
+			}
+
+			function mySqr() {
+				theForm.value = theForm.value * theForm.value;
+			}
+
+			function mySqrt() {
+				theForm.value = (Math.sqrt(theForm.value));
+
+			}
+		</script>
+	</body>
+</html>
